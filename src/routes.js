@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   createAppContainer,
   createSwitchNavigator,
@@ -39,7 +40,7 @@ export default (isSigned = false) =>
                 {
                   defaultNavigationOptions: {
                     headerTransparent: true,
-                    headerTintColor: '#FFF',
+                    headerTintColor: '#fff',
                     headerLeftContainerStyle: {
                       marginLeft: 20,
                     },
@@ -61,9 +62,10 @@ export default (isSigned = false) =>
             Profile,
           },
           {
+            resetOnBlur: true,
             tabBarOptions: {
               keyboardHidesTabBar: true,
-              activeTintColor: '#FFF',
+              activeTintColor: '#fff',
               inactiveTintColor: 'rgba(255, 255, 255, 0.6)',
               style: {
                 backgroundColor: '#8d41a8',
