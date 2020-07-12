@@ -9,8 +9,9 @@ export const Container = styled.SafeAreaView`
 
 export const Separator = styled.View`
   height: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #fff;
   margin: 20px 0 30px;
+  opacity: 0.2;
 `;
 
 export const Title = styled.Text`
@@ -31,6 +32,7 @@ export const Form = styled.ScrollView.attrs({
 
 export const FormInput = styled(Input)`
   margin-bottom: 10px;
+  color: #262524;
 `;
 
 export const SubmitButton = styled(Button)`
@@ -39,5 +41,5 @@ export const SubmitButton = styled(Button)`
 
 export const LogoutButton = styled(Button)`
   margin-top: 10px;
-  background: #f64c75;
+  background: red;
 `;

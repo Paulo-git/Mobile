@@ -33,11 +33,12 @@ export const Info = styled.View`
 export const Name = styled.Text`
   font-weight: bold;
   font-size: 14px;
-  color: #333;
+  color: #262524;
 `;
 
 export const Time = styled.Text`
-  color: #999;
+  color: #262524;
   font-size: 13px;
   margin-top: 4px;
+  opacity: 0.6;
 `;

@@ -9,7 +9,7 @@ import api from '~/services/api';
 
 import Background from '~/components/Background';
 
-import { Container, Avatar, Name, Time, SubmitButton } from './styles';
+import { Container, Avatar, Name, Time, SubmitButton, Title } from './styles';
 
 export default function Confirm({ navigation }) {
   const provider = navigation.getParam('provider');
@@ -52,14 +52,16 @@ export default function Confirm({ navigation }) {
 }
 
 Confirm.navigationOptions = ({ navigation }) => ({
-  title: 'Confirmar agendamento',
   headerLeft: () => (
-    <TouchableOpacity
-      onPress={() => {
-        navigation.goBack();
-      }}
-    >
-      <Icon name="chevron-left" size={20} color="#fff" />
-    </TouchableOpacity>
+    <>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.goBack();
+        }}
+      >
+        <Icon name="chevron-left" size={20} color="#FFF" />
+      </TouchableOpacity>
+      <Title>Confirmar agendamento</Title>
+    </>
   ),
 });

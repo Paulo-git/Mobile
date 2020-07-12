@@ -8,7 +8,7 @@ import api from '~/services/api';
 import Background from '~/components/Background';
 import DateInput from '~/components/DateInput';
 
-import { Container, HourList, Hour, Title } from './styles';
+import { Container, HourList, Hour, Title, Head } from './styles';
 
 export default function SelectDateTime({ navigation }) {
   const [date, setDate] = useState(new Date());
@@ -60,14 +60,16 @@ export default function SelectDateTime({ navigation }) {
 }
 
 SelectDateTime.navigationOptions = ({ navigation }) => ({
-  title: 'Selecione o horário',
   headerLeft: () => (
-    <TouchableOpacity
-      onPress={() => {
-        navigation.goBack();
-      }}
-    >
-      <Icon name="chevron-left" size={20} color="#fff" />
-    </TouchableOpacity>
+    <>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.goBack();
+        }}
+      >
+        <Icon name="chevron-left" size={20} color="#FFF" />
+      </TouchableOpacity>
+      <Head>Selecione o horário</Head>
+    </>
   ),
 });

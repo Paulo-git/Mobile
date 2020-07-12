@@ -25,10 +25,19 @@ export const Name = styled.Text`
 export const Time = styled.Text`
   margin-top: 4px;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  opacity: 0.6;
 `;
 
 export const SubmitButton = styled(Button)`
   align-self: stretch;
   margin-top: 20px;
+  color: #fff;
+`;
+
+export const Title = styled.Text`
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 55px;
 `;

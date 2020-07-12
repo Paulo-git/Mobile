@@ -26,5 +26,12 @@ export const Hour = styled(RectButton)`
 export const Title = styled.Text`
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: #262524;
+`;
+
+export const Head = styled.Text`
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 67px;
 `;

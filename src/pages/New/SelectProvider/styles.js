@@ -33,6 +33,13 @@ export const Name = styled.Text`
   margin-top: 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: #262524;
   text-align: center;
+`;
+
+export const Title = styled.Text`
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 61px;
 `;
